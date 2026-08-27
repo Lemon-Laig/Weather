@@ -1,5 +1,19 @@
 # Vue 3 + TypeScript + Vite
-
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+weather-card/
+├── src/
+│   ├── api/
+│   │   └── weatherApi.ts          # 和风天气API请求封装
+│   ├── adapters/
+│   │   └── weatherAdapter.ts     # 数据适配器（字段映射）
+│   ├── composables/
+│   │   └── useWeather.ts          # 天气业务逻辑Hook
+│   ├── components/
+│   │   └── WeatherCard.vue        # 天气卡片组件
+│   ├── types/
+│   │   └── weather.ts             # TypeScript类型定义
+│   ├── App.vue
+│   └── main.ts
+├── .env.local                     # API Key配置（不提交仓库）
+├── .env.example                   # 环境变量示例
+├── vite.config.ts                 # Vite代理配置
+└── index.html
