@@ -21,7 +21,7 @@
 
 - API 凭据仅存放在 `.env.local`（已被 `.gitignore` 的 `*.local` 规则排除）
 - 参考模板见 `.env.example`；请勿将真实 Key 提交至公开仓库
-- 目录 `weather-card\src\assets\node_modules` 为 从和风天气官网文档`qweather-icons`图标的安装目录
+- 目录 `\src\assets\node_modules` 为 和风天气官网`qweather-icons`提供的图标的安装目录
 - 免费订阅有每日请求额度限制，请勿滥用
 
 ## 🙏 数据来源声明
