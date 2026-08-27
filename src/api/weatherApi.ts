@@ -5,8 +5,9 @@ import type {
   GeoLocation,
 } from '../types/weather'
 
-const HOST = String(import.meta.env.VITE_QWEATHER_HOST ?? '')
-const KEY = String(import.meta.env.VITE_QWEATHER_KEY ?? '')
+const RAW_HOST = String(import.meta.env.VITE_QWEATHER_HOST ?? '').trim().replace(/\/+$/, '')
+const HOST = RAW_HOST.startsWith('http') ? RAW_HOST : `https://${RAW_HOST}`
+const KEY = String(import.meta.env.VITE_QWEATHER_KEY ?? '').trim()
 
 async function request<T>(path: string): Promise<T> {
   const res = await fetch(path)
