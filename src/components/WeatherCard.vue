@@ -44,7 +44,7 @@ function nowText(): string {
       <input
         v-model="keyword"
         type="text"
-        placeholder="输入城市名，如：绍兴"
+        placeholder="输入城市名，如：北京"
         @input="onKeywordInput"
       />
       <ul v-if="keyword.trim().length > 0" class="city-dropdown">

@@ -11,7 +11,7 @@ import type {
   DailyForecastView,
 } from '../types/weather'
 
-const DEFAULT_CITY_KEYWORD = '绍兴'
+const DEFAULT_CITY_KEYWORD = '北京'
 
 export function useWeather() {
   const keyword = ref('')
