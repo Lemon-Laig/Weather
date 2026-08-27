@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+  background: linear-gradient(160deg, #74b3ff 0%, #4886e8 60%, #3b6ac9 100%);
+}
+
+#app {
+  min-height: 100vh;
+}
