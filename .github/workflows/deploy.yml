@@ -31,6 +31,9 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
+        env:
+          VITE_QWEATHER_HOST: ${{ secrets.QWEATHER_HOST }}
+          VITE_QWEATHER_KEY: ${{ secrets.QWEATHER_KEY }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
