@@ -11,7 +11,7 @@ const KEY = String(import.meta.env.VITE_QWEATHER_KEY ?? '')
 async function request<T>(path: string): Promise<T> {
   const res = await fetch(path)
   if (!res.ok) {
-    throw new Error(`请求失败（${res.status}）`)
+    throw new Error(`未找到相关城市`)
   }
   return res.json() as Promise<T>
 }
